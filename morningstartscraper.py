@@ -42,11 +42,6 @@ class Tickers:
 def Test(ticker):
     url = "https://www.morningstar.com/funds/xnas/" + ticker + "/performance"
 
-    ticker_U = ticker.upper()
-    table = tickers[ticker_U][1]
-    actual = tickers[ticker_U][2]
-    epsilon = tickers[ticker_U][3]
-
     tick = Tickers(ticker,url)
     tick.scrape_vanguard_data()
 
@@ -59,6 +54,6 @@ def Test(ticker):
 
 if __name__ == "__main__":
 
-    tickers = ["brsix","vbtlx"]
+    tickers = ["brsix","vbtlx","vsmpx"]
         for ticker in tickers:
             Test(ticker)
