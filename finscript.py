@@ -77,7 +77,7 @@ if __name__ == "__main__":
     actual = tickers[ticker][2]
     epsilon = tickers[ticker][3]
 
-    tick1 = Tickers(ticker,url,table,epsilon,actual)
-    asyncio.run(tick1.scrape_vanguard_data())
-    f_t = tick1.f_total()
-    tick1.assert_(f_t)
+    VBTLX = Tickers(ticker,url,table,epsilon,actual)
+    asyncio.run(VBTLX.scrape_vanguard_data())
+    f_t = VBTLX.f_total()
+    VBTLX.assert_(f_t)
