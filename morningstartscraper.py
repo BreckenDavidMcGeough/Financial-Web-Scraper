@@ -48,12 +48,12 @@ def Test(ticker):
     dates = ['1-Day', '1-Week', '1-Month', '3-Month', 'YTD', '1-Year', '3-Year', '5-Year', '10-Year', '15-Year']
     print(ticker + "---------------------------------------------")
     for date in dates:
-        print(str(tick2.get_investment_by_date(date)) + " : " + date)  
+        print(str(tick.get_investment_by_date(date)) + " : " + date)  
     print("-------------------------------------------------\n") 
 
 
 if __name__ == "__main__":
 
-    tickers = ["brsix","vbtlx","vsmpx"]
-        for ticker in tickers:
-            Test(ticker)
+    tickers = ["brsix","vbtlx","vsmpx","vtsax"]
+    for ticker in tickers:
+        Test(ticker)
