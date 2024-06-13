@@ -6,7 +6,7 @@ The script 'finscript.py' loads this website: [link](https://investor.vanguard.c
 
 The script 'morningstarscraper.py' loads this website: [link](https://www.morningstar.com) and depending on which mutual fund investment data you want to view, will load the perfomance section of that mutual fund. For example, if you wish to view the data for VBTLX, then it will scrape the link: 
 
-Morning Star VBTLX mutual fund: [https://www.morningstar.com/funds/xnas/vbtlx/performance](https://www.morningstar.com/funds/xnas/vbtlx/performance). 
+Morning Star VBTLX mutual fund: [https://www.morningstar.com/funds/xnas/vbtlx/performance](https://www.morningstar.com/funds/xnas/vbtlx/performance) 
 
 It will return a list of all mutual funds that you desired to view, and for each mutual fund will display a list of the investment returns at days end for 1-day, 1-month, 3-montsh, YTD, 1-year, 3-year, 5-year, 10-year, 15-year timescale increments that it scraped from each mutual funds page on the morningstar website.
 
